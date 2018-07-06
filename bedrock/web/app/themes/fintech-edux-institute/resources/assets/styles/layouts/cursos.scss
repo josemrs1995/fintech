@@ -1,0 +1,57 @@
+.contenedor-de-cursos {
+  background-image: $pattern;
+  background-size: $patternsize;
+  padding: 46px 30px;
+
+  .boton {
+    border: solid 3px $verde;
+    padding: 10px 30px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .boton:hover {
+    background: $verde;
+    transition: 0.5s;
+    font-weight: 800;
+    color: $gris;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-size: 12px;
+  }
+
+  h1 {
+    color: $blanco;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  h2 {
+    color: $verde;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+
+  a {
+    color: $blanco;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  p {
+    color: $blanco;
+    text-align: justify;
+  }
+}
+
+.conti {
+  margin: 0 auto;
+  max-width: 1200px;
+}

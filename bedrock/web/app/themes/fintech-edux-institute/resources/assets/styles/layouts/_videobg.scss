@@ -1,0 +1,60 @@
+.videobg {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.contenido-video {
+  background-image: $pattern;
+  background-size: $patternsize;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  height: 200px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 5%;
+  color: white;
+
+  .boton {
+    border: solid 3px $verde;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .boton:hover {
+    background: $verde;
+    transition: 0.5s;
+    color: $gris;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  h1 {
+    color: $blanco;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  a {
+    color: $blanco;
+  }
+}

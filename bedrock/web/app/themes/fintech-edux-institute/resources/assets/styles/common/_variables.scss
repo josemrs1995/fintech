@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600,800');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/** Colors */
+$primary:               #525ddc;
+$gris: #282927;
+$blanco: white;
+$verde: #baee3d;
+$oliva: #647612;
+
+/** Box Model  */
+$spacer:                2rem;
+
+/* background */
+
+$pattern: url('../images/BG-patron-01.jpg');
+$patternsize: 1000px;

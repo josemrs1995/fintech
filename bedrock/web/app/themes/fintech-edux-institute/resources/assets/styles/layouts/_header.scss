@@ -1,0 +1,38 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.nav-primary {
+  display: flex;
+  height: 81px;
+  background: $gris;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  border: none;
+  padding: 0 25px;
+}
+
+.nav {
+  background: transparent;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  li a:not(.button),
+  a.nav-item:not(.button) {
+    color: $blanco !important;
+  }
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* .nav li a:not(.button), a.nav-item:not(.button) {
+  color: white;
+  height: 0px;
+} */
+
