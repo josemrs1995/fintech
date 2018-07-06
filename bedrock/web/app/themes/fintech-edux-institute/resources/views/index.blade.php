@@ -5,5 +5,4 @@
   @include('partials.cursoslist')
   @include('partials.nosotros')
   @include('partials.servicios')
-  @include('partials.footer')
 @endsection
