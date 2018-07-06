@@ -2,6 +2,11 @@
   background-image: $pattern;
   background-size: $patternsize;
   padding: 46px 30px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   .boton {
     border: solid 3px $verde;
@@ -54,4 +59,15 @@
 .conti {
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.img-container {
+  height: 60px;
+  width: 60px;
+  filter: brightness(100);
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering: -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }

@@ -1,6 +1,5 @@
 .nosotros {
-  max-width: 1200px;
-  height: 73vh;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -14,20 +13,20 @@
     background-image: $pattern;
     background-size: cover !important;
     position: absolute;
-    height: 270px;
-    width: 270px;
+    height: 300px;
+    width: 300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .img-1 {
-    height: 300px;
+    height: 330px;
   }
 
   .img-2 {
     transform: translate(-24%, -24%);
-    z-index: 999;
+    z-index: 9;
   }
 
   .img-3 {
@@ -46,14 +45,14 @@
   h1 {
     color: $oliva;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 5px;
   }
 
   h2 {
     color: $oliva;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 28px;
     letter-spacing: 5px;
   }
 
@@ -81,8 +80,9 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 2px;
     text-align: justify;
+    width: 75%;
   }
 }
