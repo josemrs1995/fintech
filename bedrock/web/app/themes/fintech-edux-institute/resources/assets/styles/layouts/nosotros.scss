@@ -56,29 +56,6 @@
     letter-spacing: 5px;
   }
 
-  .boton {
-    border: solid 3px $gris;
-    padding: 10px 30px;
-    transition: 0.5s;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-size: 12px;
-    width: 215px;
-    color: $gris;
-    font-weight: 800;
-  }
-
-  .boton:hover {
-    background: $gris;
-    transition: 0.5s;
-    font-weight: 800;
-    color: $blanco;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-size: 12px;
-    width: 215px;
-  }
-
   p {
     font-size: 18px;
     letter-spacing: 2px;
