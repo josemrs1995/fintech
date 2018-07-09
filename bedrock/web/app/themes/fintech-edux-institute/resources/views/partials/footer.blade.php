@@ -12,17 +12,29 @@
         <input type="text" placeholder="nombre">
         <input type="text" placeholder="e-mail">
         <textarea name="mensaje" id="mensaje" placeholder="su mensaje"></textarea>
-        <input type="submit" value="enviar">
+        <input class="boton" type="submit" value="enviar">
       </form>
     </div>
-    <div class="column is-3">
-      <h1>hola mundo</h1>
+    <div class="column is-3 tercera">
+      <p>CONTACTANOS</p>
+      <div class="img-footer">
+        <a href=""><img src="@asset('images/icon-youtube.png')"></a>
+        <a href=""><img src="@asset('images/icon-linkedin.png')"></a>
+        <a href=""><img src="@asset('images/icon-facebook.png')"></a>
+        <a href=""><img src="@asset('images/icon-instagram.png')"></a>
+        <a href=""><img src="@asset('images/icon-twitter.png')"></a>
+      </div>
+      <p>SUSCRIBETE</p>
+      <form action="" class="formulario">
+        <input type="text" placeholder="E-mail">
+        <input class="boton" type="submit" value="enviar">
+      </form>
     </div>
     <div class="column is-3">
       <img class="img-fei" src="@asset('images/FEI-ISO-05.png')">
     </div>
   </div>
   <div class="columns is-12 copy">
-    <p>COPYRIGHT - © 2018 FINTECHDUXINSTITUTE.COM <br>ALL RIGHTS RESERVED</p>
+    <p class="p">COPYRIGHT - © 2018 FINTECHDUXINSTITUTE.COM <br>ALL RIGHTS RESERVED</p>
   </div>
 </footer>
