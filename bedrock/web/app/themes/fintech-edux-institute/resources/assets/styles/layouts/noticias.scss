@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  height: auto;
 
   h1 {
     color: $oliva;
@@ -11,6 +12,7 @@
     font-size: 30px;
     letter-spacing: 5px;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   h2 {
@@ -27,7 +29,7 @@
   width: 7px;
   position: absolute;
   height: 100%;
-  background: green;
+  background: $verdeo;
   left: 50%;
   transform: translate(-50%);
 }
@@ -39,8 +41,12 @@
   .date {
     position: absolute;
     right: 0;
-    top: 55px;
-    transform: rotate(-90deg);
+    top: -14px;
+    transform: translateX(-45px) rotate(-90deg);
+    transform-origin: right;
+    color: $verdeo;
+    font-weight: 400;
+    letter-spacing: 1.5px;
   }
 
   .diamante {
@@ -52,7 +58,7 @@
     transform: translate(50%);
 
     .rombo {
-      border: solid 7px green;
+      border: solid 7px $verdeo;
       height: 30px;
       width: 30px;
       transform: translate(-50%, -50%) rotate(-45deg);
@@ -68,6 +74,9 @@
     .date {
       right: inherit;
       left: 0;
+      top: 150px;
+      transform-origin: left;
+      transform: translateX(45px) rotate(-90deg);
     }
 
     .diamante {
@@ -75,5 +84,29 @@
       left: 0;
       transform: translate(-50%);
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline-item {
+    margin-top: 20px !important;
+
+    .date {
+      transform: none !important;
+      position: relative !important;
+      top: 0 !important;
+    }
+
+    .diamante {
+      display: none !important;
+    }
+
+    .rombo {
+      display: none !important;
+    }
+  }
+
+  .barra-vertical {
+    display: none;
   }
 }

@@ -2,7 +2,7 @@
   background-image: $pattern;
   background-size: $patternsize;
   padding: 46px 30px;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,7 @@
     letter-spacing: 3.5px;
     font-size: 12px;
     font-weight: 800;
+    width: 228px;
   }
 
   .boton:hover {
@@ -26,6 +27,7 @@
     text-transform: uppercase;
     letter-spacing: 3.5px;
     font-size: 12px;
+    width: 228px;
   }
 
   h1 {
