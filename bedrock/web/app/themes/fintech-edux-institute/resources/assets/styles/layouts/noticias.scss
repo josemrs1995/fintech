@@ -34,6 +34,10 @@
   transform: translate(-50%);
 }
 
+.boton {
+  text-align: center;
+}
+
 .timeline-item {
   padding: 0 10%;
   position: relative;
@@ -117,6 +121,14 @@
       font-size: 22px;
     }
   }
+
+  .boton {
+    width: 208px !important;
+  }
+
+  .boton:hover {
+    width: 208px !important;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -159,10 +171,10 @@
   }
 
   .boton {
-    width: 188px;
+    width: 208px !important;
   }
 
   .boton:hover {
-    width: 188px;
+    width: 208px !important;
   }
 }

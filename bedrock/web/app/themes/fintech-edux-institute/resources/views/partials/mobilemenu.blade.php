@@ -6,5 +6,7 @@
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
         @endif
     </nav>
+    <div><img class="img-fei-menu" src="@asset('images/FEI-ISO-05.png')"></div>
     </div>
+    
 </div>

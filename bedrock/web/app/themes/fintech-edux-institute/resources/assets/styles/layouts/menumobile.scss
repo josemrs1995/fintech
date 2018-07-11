@@ -2,6 +2,12 @@
   display: none;
 }
 
+.img-fei-menu {
+  position: absolute;
+  transform: translate(11%, -44%);
+  width: 90%;
+}
+
 .menu-container {
   height: 100vh;
   width: 100vw;
@@ -9,7 +15,7 @@
   top: 0;
   left: 0;
   z-index: 9999999999;
-  background-image: $pattern;
+  background: $gris;
   background-size: $patternsize;
   align-items: center;
   justify-content: center;
@@ -63,7 +69,7 @@ ul#menu-menu-1 {
 
 .img-menu {
   width: 200px;
-  height: 70px;
+  height: 60px;
   align-content: center;
 }
 
