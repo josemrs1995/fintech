@@ -1,4 +1,5 @@
 <div class="servicios columns">
+    <div class="img-servicios-1 column" style="background:url('{{ home_url('/app/uploads/2018/07/foto3.jpeg') }}'); background-size: contain; background-repeat: no-repeat;  background-attachment: fixed;"></div>
     <div class="contenido-servicios column">
         <div class="columns is-multiline">
             @foreach ($servicios_loop as $servicios )

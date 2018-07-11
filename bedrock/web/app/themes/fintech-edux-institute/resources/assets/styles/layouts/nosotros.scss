@@ -70,8 +70,48 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 401px) {
   .img {
     transform: scale(0.7) !important;
+    height: 68vh;
+  }
+
+  .conte-nosotros {
+    height: auto;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .img {
+    transform: scale(0.6) !important;
+    height: 68vh;
+  }
+
+  .conte-nosotros {
+    height: auto;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 }

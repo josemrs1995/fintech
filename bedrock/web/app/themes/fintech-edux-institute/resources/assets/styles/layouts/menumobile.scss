@@ -9,23 +9,20 @@
   top: 0;
   left: 0;
   z-index: 9999999999;
-  background: black;
+  background-image: $pattern;
+  background-size: $patternsize;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   display: flex;
 }
 
-.nav-mobile {
-  border: solid white;
-  padding: 50px;
-}
-
 ul#menu-menu-1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   height: auto;
+  padding: 20px;
 }
 
 .navbar-burger {
@@ -64,7 +61,21 @@ ul#menu-menu-1 {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+.img-menu {
+  width: 200px;
+  height: 70px;
+  align-content: center;
+}
+
+li {
+  padding: 20px;
+}
+
+li:hover {
+  color: $verde;
+}
+
+@media only screen and (max-width: 1023px) {
   #menu-menu-2 {
     display: none;
   }

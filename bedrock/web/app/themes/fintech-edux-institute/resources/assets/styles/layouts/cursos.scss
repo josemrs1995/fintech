@@ -16,7 +16,7 @@
     letter-spacing: 3.5px;
     font-size: 12px;
     font-weight: 800;
-    max-width: 228px;
+    max-width: 226px;
     width: 100%;
   }
 
@@ -28,7 +28,7 @@
     text-transform: uppercase;
     letter-spacing: 3.5px;
     font-size: 12px;
-    width: 228px;
+    width: 226px;
   }
 
   h1 {
@@ -74,4 +74,20 @@
   image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-de-cursos {
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 }

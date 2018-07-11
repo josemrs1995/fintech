@@ -34,6 +34,7 @@
     letter-spacing: 3.5px;
     font-size: 12px;
     font-weight: 800;
+    text-align: center;
   }
 
   .boton:hover {
@@ -55,5 +56,48 @@
 
   a {
     color: $blanco;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 401px) {
+  .contenido-video {
+    padding: 0 8%;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .boton {
+      font-size: 10px;
+      width: 200px;
+    }
+
+    .boton:hover {
+      font-size: 10px;
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contenido-video {
+    padding: 0 10%;
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .boton {
+      font-size: 10px;
+      width: 165px;
+      padding: 10px 20px;
+    }
+
+    .boton:hover {
+      font-size: 10px;
+      width: 165px;
+      padding: 10px 20px;
+    }
   }
 }
