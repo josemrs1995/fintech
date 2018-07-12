@@ -1,4 +1,4 @@
-<div class="nosotros columns">
+<div class="nosotros-home columns">
     <div class="img column" >
         <div class="img-1" >
         </div>

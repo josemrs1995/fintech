@@ -1,0 +1,58 @@
+.nosotros-content {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  .fondo-nosotros {
+    background-image: $pattern;
+    background-size: $patternsize;
+    height: 80%;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: $blanco;
+    }
+
+    .quienessomos {
+      position: absolute;
+      bottom: 0;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      p {
+        color: $verde;
+        font-size: 12px;
+      }
+
+      .diamante {
+        height: 75px;
+        width: 50px;
+        justify-content: center;
+
+        .rombo {
+          border: solid 7px $blanco;
+          height: 30px;
+          width: 30px;
+          transform: rotate(-45deg);
+          margin: 0 AUTO;
+        }
+      }
+    }
+  }
+
+  .svgclip {
+    position: absolute;
+    bottom: -7px;
+    width: 100%;
+  }
+}
