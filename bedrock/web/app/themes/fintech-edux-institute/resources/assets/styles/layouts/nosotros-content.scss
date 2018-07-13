@@ -1,58 +1,51 @@
-.nosotros-content {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
+.seccion-1 {
+  height: auto;
+  padding: 5%;
 
-  .fondo-nosotros {
-    background-image: $pattern;
-    background-size: $patternsize;
-    height: 80%;
-    align-content: center;
+  h1 {
+    color: $verdeo;
+    font-size: 30px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-
-    h1 {
-      font-size: 30px;
-      font-weight: 800;
-      color: $blanco;
-    }
-
-    .quienessomos {
-      position: absolute;
-      bottom: 0;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-
-      p {
-        color: $verde;
-        font-size: 12px;
-      }
-
-      .diamante {
-        height: 75px;
-        width: 50px;
-        justify-content: center;
-
-        .rombo {
-          border: solid 7px $blanco;
-          height: 30px;
-          width: 30px;
-          transform: rotate(-45deg);
-          margin: 0 AUTO;
-        }
-      }
-    }
+    font-weight: 600;
+    letter-spacing: 1.5px;
   }
 
-  .svgclip {
+  img {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+
+  .diamante-seccion {
+    height: 75px;
+    width: 30px;
+    margin: 0 auto;
+
+    .rombo-seccion {
+      border: solid 7px $verdeo;
+      height: 30px;
+      width: 30px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.seccion-2 {
+  position: relative;
+
+  .linea-grande {
+    width: 7px;
     position: absolute;
-    bottom: -7px;
-    width: 100%;
+    height: 100%;
+    background: $verdeo;
+    left: 50%;
+    transform: translate(-4px);
   }
 }

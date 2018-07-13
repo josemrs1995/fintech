@@ -1,0 +1,62 @@
+.portadas {
+  background-image: $pattern;
+  background-size: $patternsize;
+  height: 70vh;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: $blanco;
+  }
+
+  .quienessomos {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      color: $verdeo;
+      font-size: 12px;
+    }
+
+    .diamante {
+      height: 75px;
+      width: 30px;
+
+      .rombo {
+        border: solid 7px $blanco;
+        height: 30px;
+        width: 30px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .svgclip {
+    position: absolute;
+    bottom: -7px;
+    width: 100%;
+  }
+
+  .linea-pequeña {
+    width: 7px;
+    position: absolute;
+    height: 8%;
+    background: $verdeo;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-3px);
+    margin: 0 auto;
+  }
+}
