@@ -18,6 +18,8 @@
     font-weight: 800;
     max-width: 226px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .boton:hover {
@@ -28,7 +30,8 @@
     text-transform: uppercase;
     letter-spacing: 3.5px;
     font-size: 12px;
-    width: 226px;
+    display: flex;
+    justify-content: center;
   }
 
   h1 {

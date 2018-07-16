@@ -46,7 +46,7 @@
         {{-- loop through the rows of data --}}
         @while (have_rows('seccion2', 8))@php(the_row())
             @php( $column = get_sub_field('columna'))
-            <div class="column">{!!$column!!}</div>
+            <div class="column"><div class="content">{!!$column!!}</div></div>
         @endwhile
         @else      
         @endif

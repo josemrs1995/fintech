@@ -1,4 +1,45 @@
-.cursos-content {
+.titulos-content,
+.cursos-content,
+.talleres-content {
   max-width: 1200px;
   margin: 95px auto;
+
+  .cursos-boton,
+  .taller-boton {
+    text-decoration: none;
+    color: #e1e5db;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+
+    &.active {
+      color: $verdeo;
+    }
+  }
+}
+
+.talleres-content,
+.cursos-content {
+  h2 {
+    color: $verdeo;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+  }
+
+  .boton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .dentro {
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
 }
