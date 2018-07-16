@@ -19,6 +19,21 @@
         )
     );
 
+    register_post_type( 'talleres',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Talleres' ),
+                'singular_name' => __( 'Taller' )
+            ),
+            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+            'public' => true,
+            'publicly_queryable' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'talleres'),
+        )
+    );
+
     register_post_type( 'servicios',
     // CPT Options
         array(

@@ -9,6 +9,16 @@
 @endwhile
 @else      
 @endif
+@if(have_rows('seccion3', 8))
+{{-- loop through the rows of data --}}
+@while (have_rows('seccion3', 8))@php(the_row())
+    @php( $titulo3 = get_sub_field('titulo'))
+    @php( $contenido3 = get_sub_field('contenido'))
+    @php( $imagen3 = get_sub_field('imagen'))
+    @php( $boton = get_sub_field('boton'))
+@endwhile
+@else      
+@endif
 <div class="portadas">
     <h1>NOSOTROS</h1>
     <div class="quienessomos">
@@ -41,6 +51,16 @@
         @else      
         @endif
         <div class="linea-grande"></div>
+</div>
+    <div class="seccion-3">
+        <div class="diamante-seccion">
+            <div class="rombo-seccion"></div>
+    </div>
+    <h1>{{$titulo3}}</h1>
+    <div style="background: url('{{$imagen3}}'); height:400px; background-size: cover"></div>
+    <p>{{$contenido3}}</p>
+    <div class="linea-pequeña"></div> 
+    <a class="boton" href="{{$boton}}">Cursos y Talleres</a>
 </div>
 
 

@@ -1,7 +1,7 @@
 <div class="contenedor-de-cursos">
     <h1>NUESTROS CURSOS</h1>
     <div class="columns conti">   
-        @foreach ($cursos_loop as $cursos)
+        @foreach (array_slice($cursos_loop,0,4) as $cursos)
         <div class="curso column is-3">
             <div class="colums">
                 <div class="img-container" style="background:url('{{$cursos['thumbnail']}}'); background-size: contain;">
