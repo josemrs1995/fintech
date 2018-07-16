@@ -32,6 +32,8 @@
     justify-content: center;
     width: 100%;
     max-width: 250px;
+    position: absolute;
+    bottom: 30px;
   }
 
   p {
@@ -41,5 +43,15 @@
   .dentro {
     box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    height: 502px;
+    position: relative;
   }
+}
+
+.cursos-content .dentro {
+  height: 352px;
+}
+
+.titulos-content a {
+  padding: 5px 20px;
 }
