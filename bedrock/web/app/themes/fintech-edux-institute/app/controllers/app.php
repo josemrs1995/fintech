@@ -72,6 +72,7 @@ class App extends Controller
         $servicios = get_posts([
             'posts_per_page'=>'5',
             'post_type' => 'servicios',
+            'has_archive' => false,
         ]);
  
         return array_map(function ($post) {
@@ -89,7 +90,6 @@ class App extends Controller
     function noticiasLoop()
     {
         $noticias = get_posts([
-            'posts_per_page'=>'4',
             'post_type' => 'post',
         ]);
  
@@ -102,7 +102,7 @@ class App extends Controller
                 'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
                 'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
                 'tags' => get_tags($post->ID),
-                'date' => get_the_date( 'l F j, Y' ) 
+                'date' => get_the_date( 'l F j, Y', $post->ID ) 
             ];
         }, $noticias);
     }

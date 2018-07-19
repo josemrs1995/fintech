@@ -1,11 +1,12 @@
-<div class="noticias container">
+<div class="nosotros-contenido">
+    <div class="noticias container">
         <h1>ULTIMAS NOTICIAS</h1>
     <div class="columns timeline-container is-multiline" style="position:relative">
 
         {{--Esto es la barra vertical--}}
         <div class="barra-vertical"></div>
         
-        @foreach (array_slice($noticias_loop,0,4) as $noticias)
+        @foreach ($noticias_loop as $noticias)
             <div class="column timeline-item is-half">
                 <div class="diamante">
                     <div class="rombo"></div>
@@ -21,4 +22,5 @@
      
     </div>
     <a class="boton" style="margin: auto">Ultimas Noticias</a>
+</div>
 </div>

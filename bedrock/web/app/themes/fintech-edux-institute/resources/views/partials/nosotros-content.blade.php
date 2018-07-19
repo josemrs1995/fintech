@@ -41,6 +41,7 @@
     <div class="diamante-seccion">
         <div class="rombo-seccion"></div>
     </div>
+</div>
 <div class="seccion-2 columns">
         @if(have_rows('seccion2', 8))
         {{-- loop through the rows of data --}}

@@ -12,7 +12,7 @@
             @endforeach
             
         </div>
-        <a class="boton" href="{{$servicios['link']}}">Ver Servicios</a>
+        <a class="boton" href="/index.php/nuestros-servicios/">Ver Servicios</a>
     </div>
     <div class="img-servicios column" style="background:url('{{ home_url('/app/uploads/2018/07/foto3.jpeg') }}'); background-size: cover;  background-attachment: fixed;"></div>
 </div>
