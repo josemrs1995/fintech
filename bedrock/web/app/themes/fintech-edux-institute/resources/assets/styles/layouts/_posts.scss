@@ -1,0 +1,31 @@
+.entry-content {
+  margin: 95px auto;
+  max-width: 1200px;
+
+  h2 {
+    color: $oliva;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+
+  img {
+    height: 400px;
+    background-size: cover;
+  }
+}
+
+.servicios-rombo {
+  position: relative;
+  height: auto;
+  margin: 95px auto;
+  max-width: 1200px;
+}

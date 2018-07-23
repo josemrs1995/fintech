@@ -1,13 +1,23 @@
-<article @php post_class() @endphp>
-  <header>
-    <h1 class="entry-title">{{ get_the_title() }}</h1>
-    @include('partials/entry-meta')
-  </header>
-  <div class="entry-content">
-    @php the_content() @endphp
+<div class="portadas">
+<h1>{!! App::title() !!}</h1>
+  <div class="quienessomos">
+          <p>{{ get_field('sub_titulo') }}</p>
+          <div class="diamante">
+              <div class="rombo"></div>
+          </div>
   </div>
-  <footer>
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-  </footer>
-  @php comments_template('/partials/comments.blade.php') @endphp
-</article>
+  <div class="svgclip">
+      <svg width='100%' height='100%' viewBox="0 0 100 100">
+              <polygon fill="white"  points="0,90 50,99 100,90  100,100 0,100" />
+      </svg>
+  </div>
+  <div class="linea-pequeña"></div>
+</div>
+<div class="entry-content">
+    @php the_content() @endphp
+</div>
+<div class="servicios-rombo">
+  <div class="diamente-seccion">
+    <div class="rombo-seccion"></div>
+  </div>
+</div>

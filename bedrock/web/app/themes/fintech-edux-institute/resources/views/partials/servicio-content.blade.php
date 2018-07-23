@@ -8,7 +8,7 @@
                 </div>
                 <h2>{{$servicios['title']}}</h2>
                 <p>{!! $servicios['resumen'] !!}</p>
-                <a class="boton" href="{{$servicios['link']}}">Ir Al Taller</a>
+                <a class="boton" href="{{$servicios['link']}}">Ir Al Servicio</a>
             </div>
             </div>
         </div>
