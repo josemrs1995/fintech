@@ -21,3 +21,19 @@
     <div class="rombo-seccion"></div>
   </div>
 </div>
+<div class="titulo"><h1>CARACTERISTICAS DEL SERVICIO</h1></div>
+<div class="columns conte is-multiline caracteristica-servicios">
+    
+    @if(have_rows('caracteristicas_de_servicio'))
+    {{-- loop through the rows of data --}}
+    @while (have_rows('caracteristicas_de_servicio'))@php(the_row())
+    <div class="curso column is-4">
+    <div style="background:url('{{ get_sub_field('imagen') }}'); background-size: contain; height: 60px; width: 60px;"></div>
+    <h2>{{ get_sub_field('titulo') }}</h2>
+    <p>{{ get_sub_field('parrafo') }}</p>
+  </div>
+    @endwhile
+    @else      
+    @endif
+<a class="boton" href="{{ get_sub_field('boton') }}">Consultar Servicio</a> 
+</div>

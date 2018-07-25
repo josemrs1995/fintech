@@ -24,8 +24,58 @@
 }
 
 .servicios-rombo {
-  position: relative;
-  height: auto;
-  margin: 95px auto;
+  width: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  .diamente-seccion .rombo-seccion {
+    border: solid 7px #81b028;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-45deg);
+  }
+}
+
+.titulo {
+  h1 {
+    font-size: 22px;
+    color: $oliva;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+}
+
+.caracteristica-servicios {
+  margin: 60px auto;
   max-width: 1200px;
+
+  p {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: $verdeo;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+
+  a {
+    margin: 30px auto;
+    width: 260px;
+  }
+
+  a:hover {
+    width: 260px;
+  }
+
+  .curso {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
 }
