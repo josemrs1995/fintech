@@ -1,6 +1,8 @@
 .entry-content {
-  margin: 95px auto;
   max-width: 1200px;
+  margin: 50px auto;
+  position: relative;
+  padding: 46px 30px;
 
   h2 {
     color: $oliva;
@@ -11,15 +13,25 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 1.5px;
-    font-weight: 400;
-    margin-top: 35px;
+    font-weight: 600;
+    text-align: justify;
   }
 
   img {
-    height: 400px;
+    height: auto;
     background-size: cover;
+  }
+
+  @media only screen and (max-width: 400px) {
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+    }
   }
 }
 
@@ -78,6 +90,25 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
+  @media only screen and (max-width: 400px) {
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    a {
+      display: block;
+      width: 211px !important;
+    }
+
+    a:hover {
+      width: 211px !important;
+    }
+  }
 }
 
 .content-single-cursos {
@@ -94,12 +125,10 @@
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 26px;
     color: $oliva;
     letter-spacing: 2.5px;
     font-weight: 800;
-    margin-bottom: 25px;
-    margin-top: 1em;
   }
 
   h2 {
@@ -120,12 +149,20 @@
 }
 
 .content-2-cursos {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
-  padding-left: 97px;
+  padding: 46px 30px;
+  margin-left: 85px;
 
   p {
     position: relative;
     padding-left: 30px;
+  }
+
+  h1 {
+    position: absolute;
+    top: 18px;
   }
 
   h2 {
@@ -147,9 +184,10 @@
     content: '';
     position: absolute;
     height: 75px;
-    width: 50px;
+    width: 75px;
     background: white;
-    transform: translate(-154px, -33%);
+    top: -31px;
+    left: -80px;
   }
 
   p::before {
@@ -168,8 +206,49 @@
     text-align: center;
     justify-content: center;
     display: flex;
-    width: 232px;
+    width: 236px;
     margin: 56px auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .content-single-cursos,
+  .content-2-cursos {
+    h2,
+    h1 {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    a {
+      display: block;
+      width: 211px !important;
+    }
+
+    a:hover {
+      width: 211px !important;
+    }
+  }
+
+  .content-2-cursos {
+    margin-left: 10px;
+
+    h2::before {
+      content: '';
+      border: solid 5px $verdeo;
+      height: 20px;
+      width: 20px;
+      transform: translate(-50px, -16%) rotate(-45deg);
+      position: absolute;
+      z-index: 99;
+    }
   }
 }
 
@@ -224,7 +303,7 @@
 
   p {
     font-size: 14px;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     font-weight: 600;
     text-align: justify;
   }
@@ -254,6 +333,12 @@
     margin: 0 auto;
   }
 
+  .comment-list {
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+  }
+
   input,
   textarea {
     outline: none;
@@ -270,5 +355,82 @@
     padding: 3px 0 3px 3px;
     margin: 5px 1px 3px 0;
     border: 1px solid #baee3d;
+  }
+
+  input[type=submit] {
+    border: solid 3px $gris;
+    padding: 10px 30px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    width: 228px;
+    color: $gris;
+    font-weight: 800;
+    background-color: white;
+    height: auto;
+  }
+
+  input[type=submit]:hover {
+    background: $gris;
+    transition: 0.5s;
+    font-weight: 800;
+    color: $blanco;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    width: 228px;
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 401px) {
+    input[type=submit] {
+      font-size: 10px;
+      width: 200px;
+      letter-spacing: 1.5px;
+    }
+
+    input[type=submit]:hover {
+      font-size: 10px;
+      width: 200px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    input[type=submit] {
+      font-size: 10px;
+      width: 126px;
+      padding: 10px 20px;
+      letter-spacing: -0.5px;
+    }
+
+    input[type=submit]:hover {
+      font-size: 10px;
+      width: 126px;
+      padding: 10px 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .comment-list {
+      font-size: 12px;
+      width: 100%;
+      padding: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-size: 16px;
+    }
+
+    .says,
+    li,
+    p,
+    span,
+    label {
+      font-size: 12px;
+    }
   }
 }
