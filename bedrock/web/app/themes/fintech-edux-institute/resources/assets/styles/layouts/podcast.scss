@@ -47,3 +47,51 @@
   padding: 5%;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 401px) {
+  .podcast-home {
+    margin-bottom: 5% !important;
+    margin-top: 5% !important;
+  }
+
+  .conte-podcast {
+    height: auto;
+    padding: 10%;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .podcast-home {
+    margin-bottom: 5% !important;
+    margin-top: 5% !important;
+  }
+
+  .conte-podcast {
+    height: auto;
+    padding: 10%;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
