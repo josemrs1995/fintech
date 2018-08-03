@@ -6,5 +6,6 @@
   @include('partials.nosotros')
   @include('partials.servicios')
   @include('partials.podcast')
+  @include('partials.graficos')
   @include('partials.noticias')
 @endsection

@@ -69,12 +69,20 @@
       font-size: 14px;
     }
   }
+
+  .podcast-contenido {
+    height: 50vh;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .podcast-home {
     margin-bottom: 5% !important;
     margin-top: 5% !important;
+  }
+
+  .podcast-contenido {
+    height: 50vh;
   }
 
   .conte-podcast {
