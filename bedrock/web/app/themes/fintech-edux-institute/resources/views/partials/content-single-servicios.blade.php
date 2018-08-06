@@ -35,5 +35,5 @@
     @endwhile
     @else      
     @endif
-<a class="boton" href="{{ get_sub_field('boton') }}">Consultar Servicio</a> 
+<a class="boton consulta-servicio" href="javascript:void(0);">Consultar Servicio</a> 
 </div>

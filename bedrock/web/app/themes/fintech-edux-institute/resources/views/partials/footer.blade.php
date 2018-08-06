@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer id="footer"class="footer">
   <div class="columns is-12">
     <img class="logo" src="@asset('images/FEI-logotipo.png')">
   </div>
@@ -9,10 +9,10 @@
     <div class="column is-3 segunda">
       <p>CONTACTANOS</p>
       <form action="" class="formulario">
-        <input type="text" placeholder="nombre">
-        <input type="text" placeholder="e-mail">
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="text" id="correo" placeholder="e-mail">
         <textarea name="mensaje" id="mensaje" placeholder="su mensaje"></textarea>
-        <input class="boton" type="submit" value="enviar">
+        <input class="boton" id="submitemail" type="submit" value="enviar">
       </form>
     </div>
     <div class="column is-3 tercera">

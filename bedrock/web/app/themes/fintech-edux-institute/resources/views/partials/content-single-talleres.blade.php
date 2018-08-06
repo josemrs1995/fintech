@@ -41,5 +41,5 @@
     </div>
     
 </div>
-  <div class="boton-curso-interno"><a class="boton" href="#">Consultar Taller</a></div>
+  <div class="boton-curso-interno"><a class="boton consultar-taller" href="javascript:void(0);">Consultar Taller</a></div>
     
